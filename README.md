@@ -1,6 +1,10 @@
 # Easytime - FiveM Time and Weather
 ### FIXED BY BYLICKILABS
 
+```yarn
+Command.: /wetter
+```
+
 > [!NOTE]
 > FIXED
 
