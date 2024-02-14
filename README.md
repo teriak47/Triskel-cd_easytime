@@ -1,7 +1,7 @@
 # Easytime - FiveM Time and Weather
 ### FIXED BY BYLICKILABS
 
-> [NOTE]
+> [!NOTE]
 > FIXED
 ```yarn
 ESX = nil
