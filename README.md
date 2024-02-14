@@ -1,4 +1,18 @@
 # Easytime - FiveM Time and Weather
+### FIXED BY BYLICKILABS
+
+> [NOTE]
+> FIXED
+```yarn
+ESX = nil
+
+Citizen.CreateThread(function()
+    while ESX == nil do
+        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+        Citizen.Wait(0)
+    end
+end)
+```
 
 ![674x458](https://i.imgur.com/cHwhpau.png)
 
