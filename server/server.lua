@@ -1,42 +1,4 @@
---███████╗██████╗  █████╗ ███╗   ███╗███████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
---██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
---█████╗  ██████╔╝███████║██╔████╔██║█████╗  ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ 
---██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝  ██║███╗██║██║   ██║██╔══██╗██╔═██╗ 
---██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
---╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-
-
-ESX = nil
-QBCore = nil
-vRP, vRPclient = nil, nil
-
-if Config.Framework == 'esx' then
-    TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
-    if ESX == nil then
-        ESX = exports[Config.FrameworkTriggers.resource_name]:getSharedObject()
-    end
-
-elseif Config.Framework == 'qbcore' then
-    TriggerEvent(Config.FrameworkTriggers.main, function(obj) QBCore = obj end)
-    if QBCore == nil then
-        QBCore = exports[Config.FrameworkTriggers.resource_name]:GetCoreObject()
-    end
-
-elseif Config.Framework == 'vrp' then
-    local Proxy = module('vrp', 'lib/Proxy')
-    local Tunnel = module('vrp', 'lib/Tunnel')
-    vRP = Proxy.getInterface('vRP')
-    vRPclient = Tunnel.getInterface('vRP', 'chat_commands')
-end
-
-
---███╗   ███╗ █████╗ ██╗███╗   ██╗
---████╗ ████║██╔══██╗██║████╗  ██║
---██╔████╔██║███████║██║██╔██╗ ██║
---██║╚██╔╝██║██╔══██║██║██║╚██╗██║
---██║ ╚═╝ ██║██║  ██║██║██║ ╚████║
---╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝
-
+ESX = exports["es_extended"]:getSharedObject()
 
 local self = {}
 local LastWeatherTable = {}
