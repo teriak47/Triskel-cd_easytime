@@ -6,7 +6,7 @@ Command.: /wetter
 ```
 
 > [!NOTE]
-> FIXED
+> getSharedObject Failure FIXED
 
 ![674x458](https://i.imgur.com/cHwhpau.png)
 
