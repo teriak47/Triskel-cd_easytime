@@ -2,7 +2,7 @@ Config = {}
 function L(cd) if Locales[Config.Language][cd] then return Locales[Config.Language][cd] else print('Locale is nil ('..cd..')') end end
 
 Config.Framework 		= 'esx'
-Config.Language 		= 'DE'
+Config.Language 		= 'FR'
 
 Config.FrameworkTriggers = {
     main 			= 'esx:getSharedObject',
@@ -17,10 +17,10 @@ Config.NotificationType = {
 }
 
 Config.Command = {
-    OpenUI 			= 'wetter',
+    OpenUI 			= 'admin_meteo',
 
     Perms = {
-        ['esx'] 		= {'superadmin', 'admin', 'mod'},
+        ['esx'] 		= {'superadmin', 'admin'},
         ['aceperms'] 		= {'change_me', 'change_me'},
         ['identifiers'] 	= {'steam:xxxxx', 'license:xxxxx'},
     }
